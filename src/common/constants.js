@@ -2,7 +2,13 @@
 
 
 export const PATHS = {
-  main: '/'
+  main: '/',
+  auth: '/auth',
+  profile: '/profile',
+  news: '/news',
+  aboutUs: '/aboutus',
+  contacts: '/contacts',
+  catalog: '/catalog'
 }
 
 
