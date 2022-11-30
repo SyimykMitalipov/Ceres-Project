@@ -1,0 +1,24 @@
+
+
+$main_color: #007D35;
+$primary_color: #1FB25E;
+
+
+
+
+@mixin centeredFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin  spaceBetweenBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin  spaceAroundBlock {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

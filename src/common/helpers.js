@@ -1,5 +1,4 @@
 import { REQUEST_STATUSES } from './constants.js'
-
 /**
  * Creates 3 three addCases for query handling
  * @param {Object} builder
@@ -7,6 +6,7 @@ import { REQUEST_STATUSES } from './constants.js'
  * @param {Object} fields { status: string, data: string, error: string }
  * @param {Object} options { concat: true }
  */
+
 
 export const addQueryCases = (
   builder,

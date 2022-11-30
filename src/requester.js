@@ -6,10 +6,10 @@ export const requester = axios.create({
   baseURL: BASE_URL,
 })
 
-const localLang = localStorage.getItem('lang')
+// const localLang = localStorage.getItem('lang')
 
 requester.interceptors.request.use(config => {
   config.headers['Content-Type'] = 'application/json'
-  config.headers['Accept-Language'] = localLang ? localLang : 'ru'
+  // config.headers['Accept-Language'] = localLang ? localLang : 'ru'
   return config
 })

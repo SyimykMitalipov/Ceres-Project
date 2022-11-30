@@ -30,21 +30,35 @@ const theme = createTheme({
   },
 
 
- /// default styles for some components 
+  /// default styles for some components 
 
 
   components: {
     MuiCssBaseline: {
       styleOverrides: `
-      font-family: 'Commissioner', sans-serif`
+      font-family: 'Commissioner', sans-serif;
+  *{padding: 0;margin: 0;border: 0;}
+      *,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+      :focus,:active{outline: none;}
+      a:focus,a:active{outline: none;}
+      nav,footer,header,aside{display: block;}
+      html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+      input::-ms-clear{display: none;}
+      button{cursor: pointer;}
+      a,a:visited{text-decoration: none;}
+      a:hover{text-decoration: none;}
+      ul li{list-style: none;}
+      img{vertical-align: top;}
+      h1,h2,h3,h4,h5,h6{font-size:int;font-weight: inherit;}
+      `
     },
     MuiButton: {
       styleOverrides: {
-        root: ({ownerState}) => ({
+        root: ({ ownerState }) => ({
           ...(ownerState.variant === 'contained' && {
             borderRadius: '20px',
             backgroundColor: '#007D35',
-            fontWeight:600,
+            fontWeight: 600,
             color: '#ffffff',
             transition: 'all 1s',
             '&:hover': {
@@ -57,7 +71,7 @@ const theme = createTheme({
     },
     MuiContainer: {
       styleOverrides: {
-        maxWidthLg:'1110px !important',
+        maxWidthLg: '1110px !important',
       }
     }
   },
@@ -104,3 +118,6 @@ theme.typography.body2 = {
   fontWeight: 500,
   lineHeight: '20px'
 }
+
+
+export default theme;
