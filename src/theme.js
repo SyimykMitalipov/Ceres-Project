@@ -69,9 +69,11 @@ const theme = createTheme({
         })
       }
     },
-    MuiContainer: {
+    'MuiContainer': {
       styleOverrides: {
-        maxWidthLg: '1110px !important',
+        root: {
+          maxWidth: '1200px !important'
+        }
       }
     }
   },
@@ -81,12 +83,20 @@ const theme = createTheme({
 
 theme.typography.h1 = {
   ...theme.typography.h1,
-  fontSize: 18
+  fontSize: 18,
+  [theme.breakpoints.up("lg")]: {
+    fontSize: 56,
+    lineHeight: '50px'
+  }
 }
 theme.typography.h2 = {
   ...theme.typography.h2,
-  fontSize: 48,
+  fontSize: 36,
   lineHeight: '50px',
+  [theme.breakpoints.up("lg")]: {
+    fontSize: 48,
+    lineHeight: '50px'
+  }
 
 }
 

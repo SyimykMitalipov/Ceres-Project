@@ -1,9 +1,11 @@
 @import '../../global.scss';
 
-.main {
-  @include centeredFlex;
-  @include spaceAroundBlock;
-  @include spaceBetweenBlock;
-  color: $main_color;
-  background-color: $primary_color;
+.mainBlock {
+  background-image: url('../../assets/images/main-back.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  
 }
