@@ -1,5 +1,12 @@
 @import '../../global.scss';
 
+
+
+.rightBlock {
+  display: flex;
+  align-items: flex-end;
+  height: 75vh;
+}
 .mainBlock {
   background-image: url('../../assets/images/main-back.png');
   background-position: center;
@@ -7,5 +14,69 @@
   background-size: cover;
   width: 100%;
   height: 100vh;
-  
+  & h1 {
+    font-weight: 600;
+    color: #ffffff;
+    width: 400px;
+  } 
+  & h3 {
+    color: #ffffff;
+    font-weight: 600;
+    width: 200px;
+    margin-top: 40px;
+  }
 }
+
+.mainCategories {
+  @include spaceAroundBlock;
+  flex-wrap: wrap;
+  gap: 1px;
+  width: 462px;
+  > .category {
+    width: 230px;
+    height: 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-direction: column;
+    background-color: #ffffff;
+    transition: all .7s;
+    & p {
+      font-size: 15px;
+      font-weight: 600;
+     }
+     > div:first-child {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px;
+      > img {
+        width: 36px;
+        height: 36px;
+      }
+     }
+     > div:last-child {
+      display: flex;
+      width: 100%;
+      padding: 30px;
+      justify-content: start;
+      
+     }
+  }
+  .category:hover {
+    border-radius: 50px 0;
+    background-color: $main_color;
+    & p {
+      color: $white;
+    }
+    & img {      
+      > svg {
+        fill: red;
+      }
+    }
+    
+  }
+}
+
+

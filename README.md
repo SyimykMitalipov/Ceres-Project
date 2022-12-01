@@ -13,3 +13,5 @@
 #### Authors of Client: `Syimyk Mitalipov` telegram: @https://t.me/syimyk_mitalipov , `Fazylbaev Ilya` telegram: @https://t.me/EllieKaun
 #### Author of Server: `Nurjohn Tunteev `telegram: https://t.me/nh0jrun 
 
+##### `Design`: https://www.figma.com/file/d0CyAFkAvenwFRHqvJqlmN/ceres(Copy)?node-id=222%3A758&t=9QTPNrU1Cbx1e62z-1
+
