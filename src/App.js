@@ -13,13 +13,7 @@ import { ThemeProvider, CssBaseline } from '@mui/material';
 
 
 // import pages 
-import { Home } from 'pages/Home';
-import { AboutUs } from 'pages/AboutUs';
-import { News } from 'pages/News';
-import { Profile } from 'pages/Profile';
-import { Contacts } from 'pages/Contacts';
-import { Catalog } from 'pages/Catalog';
-import { Auth } from 'pages/Auth';
+import { Home,Auth,Profile,Catalog,Contacts,AboutUs,News ,Error404} from 'pages';
 
 
 
@@ -37,6 +31,7 @@ const App = () => {
             <Route path={PATHS.contacts} element={<Contacts />} />
             <Route path={PATHS.aboutUs} element={<AboutUs />} />
             <Route path={PATHS.news} element={<News />} />
+            <Route path={PATHS.notFound} element={<Error404 />} />
           </Routes>
         </Provider>
       </ThemeProvider>

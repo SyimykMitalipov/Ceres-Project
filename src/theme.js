@@ -94,7 +94,7 @@ theme.typography.h2 = {
   fontSize: 36,
   lineHeight: '50px',
   [theme.breakpoints.up("lg")]: {
-    fontSize: 48,
+    fontSize: 46,
     lineHeight: '50px'
   }
 
@@ -103,6 +103,7 @@ theme.typography.h2 = {
 theme.typography.h3 = {
   ...theme.typography.h3,
   fontSize: 36,
+  fontWeight: 600,
   lineHeight: '50px',
 
 }

@@ -17,7 +17,7 @@ import icon6 from 'assets/icons/iconMain6.svg'
 
 const cardData = [
   {
-    id:1,
+    id: 1,
     text: 'Питомники',
     img: icon1
   },
@@ -62,11 +62,11 @@ const Home = () => {
                 <Typography variant='h3' component={"h3"}>В Украине</Typography>
               </Box>
             </Grid>
-            <Grid item xs={4} className={styled.rightBlock} ali>
+            <Grid item xs={4} className={styled.rightBlock}>
               <Box className={styled.mainCategories}>
                 {cardData.map((card) => <Box key={card.id} component={"div"} className={styled.category}>
                   <Box>
-                      <Box component={"img"} src={card.img}></Box>
+                    <Box component={"img"} src={card.img}></Box>
                   </Box>
                   <Box>
                     <Typography component={'p'}>{card.text}</Typography>
@@ -76,6 +76,17 @@ const Home = () => {
               </Box>
             </Grid>
           </Grid>
+        </Container>
+      </Box>
+
+      <Box component={"div"} className={styled.proffer}>
+        <Container>
+          <Box className={styled.profferText}>
+            <Typography variant='h2' component={"h2"}>Предложения</Typography>
+          </Box>
+          <Box component={"div"} className={styled.galleryPref}>
+
+          </Box>
         </Container>
       </Box>
     </>

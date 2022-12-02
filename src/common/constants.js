@@ -8,7 +8,8 @@ export const PATHS = {
   news: '/news',
   aboutUs: '/aboutus',
   contacts: '/contacts',
-  catalog: '/catalog'
+  catalog: '/catalog',
+  notFound: '*'
 }
 
 

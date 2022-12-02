@@ -4,8 +4,8 @@
 
 .rightBlock {
   display: flex;
-  align-items: flex-end;
-  height: 75vh;
+  align-items: center;
+  height: 100vh;
 }
 .mainBlock {
   background-image: url('../../assets/images/main-back.png');
@@ -71,8 +71,9 @@
       color: $white;
     }
     & img {      
-      > svg {
+      & svg {
         fill: red;
+        border: 1px solid red;
       }
     }
     
@@ -80,3 +81,9 @@
 }
 
 
+
+
+.proffer {
+  margin-top: 150px;
+
+}
